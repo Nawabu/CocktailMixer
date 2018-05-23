@@ -15,6 +15,8 @@ public class CocktailMain {
 		
 		main.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		main.setVisible(true);
+
+		CocktailDB db = CocktailDB.getInstance();
 		
 		SelectCocktailPanel cocktailPanel = new SelectCocktailPanel(main);
 	}
