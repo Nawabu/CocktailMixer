@@ -1,4 +1,6 @@
-package de.mannheim.nawabu.cocktail;
+package de.mannheim.nawabu.cocktail.view;
+import de.mannheim.nawabu.cocktail.Config;
+
 import java.awt.BorderLayout;
 import javax.swing.JPanel;
 import java.awt.GridLayout;

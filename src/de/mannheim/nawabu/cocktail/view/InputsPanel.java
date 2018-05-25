@@ -1,4 +1,8 @@
-package de.mannheim.nawabu.cocktail;
+package de.mannheim.nawabu.cocktail.view;
+
+import de.mannheim.nawabu.cocktail.Config;
+import de.mannheim.nawabu.cocktail.model.CocktailDB;
+import de.mannheim.nawabu.cocktail.model.Ingredient;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -11,8 +15,10 @@ import java.awt.GridBagConstraints;
 import java.awt.Insets;
 import java.awt.Dimension;
 import java.awt.Font;
+import java.util.Map;
 
 public class InputsPanel extends ViewTemplate implements ActionListener {
+    private CocktailDB db = CocktailDB.getInstance();
 	
 	public InputsPanel(JFrame main) {
 		super(main);
@@ -44,7 +50,7 @@ public class InputsPanel extends ViewTemplate implements ActionListener {
 		gbc_lblName.gridy = 0;
 		contentPanel.add(lblName, gbc_lblName);
 		
-		JLabel lblGre = new JLabel("Gr\u00F6\u00DFe");
+		JLabel lblGre = new JLabel("Größe");
 		lblGre.setFont(new Font("Tahoma", Font.BOLD, 14));
 		GridBagConstraints gbc_lblGre = new GridBagConstraints();
 		gbc_lblGre.insets = new Insets(0, 0, 5, 5);
@@ -69,17 +75,15 @@ public class InputsPanel extends ViewTemplate implements ActionListener {
 	
 	private void drawInputsPage(int p) {
 		contentPanel.removeAll();
+        Map<Integer, Ingredient> ingredientMap = db.getPumpIngredients();
 		
 		int offset = (7 * (p-1)) + 1;
 		for(int x=0; x<7; x++) {
 			int row = offset + x;
 			JButton input = new JButton(String.valueOf(row));
 			input.setPreferredSize(new Dimension(120, Config.buttonHeight));
-			input.addActionListener(new ActionListener() {
-				@Override
-				public void actionPerformed(ActionEvent e) {
-					IngredientsPanel ingredients = new IngredientsPanel(mainFrame);
-				}
+			input.addActionListener(e -> {
+				IngredientsPanel ingredients = new IngredientsPanel(mainFrame, "pump", row);
 			});
 			GridBagConstraints gbc_input = new GridBagConstraints();
 			gbc_input.fill = GridBagConstraints.HORIZONTAL;
@@ -87,44 +91,48 @@ public class InputsPanel extends ViewTemplate implements ActionListener {
 			gbc_input.gridx = 0;
 			gbc_input.gridy = row;
 			contentPanel.add(input, gbc_input);
-			
-			JLabel lblName = new JLabel("Wodka");
-			lblName.setFont(new Font("Tahoma", Font.PLAIN, 14));
-			GridBagConstraints gbc_name = new GridBagConstraints();
-			gbc_name.insets = new Insets(0, 0, 5, 5);
-			gbc_name.gridx = 1;
-			gbc_name.gridy = row;
-			contentPanel.add(lblName, gbc_name);
-			
-			JLabel lblBottleSize = new JLabel("750 ml");
-			lblBottleSize.setFont(new Font("Tahoma", Font.PLAIN, 14));
-			GridBagConstraints gbc_bottleSize = new GridBagConstraints();
-			gbc_bottleSize.insets = new Insets(0, 0, 5, 5);
-			gbc_bottleSize.gridx = 2;
-			gbc_bottleSize.gridy = row;
-			contentPanel.add(lblBottleSize, gbc_bottleSize);
-			
-			JLabel lblBottleContent = new JLabel("180");
-			lblBottleContent.setFont(new Font("Tahoma", Font.PLAIN, 14));
-			GridBagConstraints gbc_bottleContent = new GridBagConstraints();
-			gbc_bottleContent.insets = new Insets(0, 0, 5, 5);
-			gbc_bottleContent.gridx = 3;
-			gbc_bottleContent.gridy = row;
-			contentPanel.add(lblBottleContent, gbc_bottleContent);
-			
-			JButton btnRefill = new JButton("auff\u00FCllen");
-			btnRefill.setPreferredSize(new Dimension(120, Config.buttonHeight));
-			btnRefill.addActionListener(new ActionListener() {
-				@Override
-				public void actionPerformed(ActionEvent e) {
-					
-				}
-			});
-			GridBagConstraints gbc_refill = new GridBagConstraints();
-			gbc_refill.insets = new Insets(0, 0, 5, 5);
-			gbc_refill.gridx = 4;
-			gbc_refill.gridy = row;
-			contentPanel.add(btnRefill, gbc_refill);
+
+			if(ingredientMap.containsKey(row)) {
+			    Ingredient i = ingredientMap.get(row);
+
+                JLabel lblName = new JLabel(i.getName());
+                lblName.setFont(new Font("Tahoma", Font.PLAIN, 14));
+                GridBagConstraints gbc_name = new GridBagConstraints();
+                gbc_name.insets = new Insets(0, 0, 5, 5);
+                gbc_name.gridx = 1;
+                gbc_name.gridy = row;
+                contentPanel.add(lblName, gbc_name);
+
+                JLabel lblBottleSize = new JLabel(String.valueOf(i.getSize()));
+                lblBottleSize.setFont(new Font("Tahoma", Font.PLAIN, 14));
+                GridBagConstraints gbc_bottleSize = new GridBagConstraints();
+                gbc_bottleSize.insets = new Insets(0, 0, 5, 5);
+                gbc_bottleSize.gridx = 2;
+                gbc_bottleSize.gridy = row;
+                contentPanel.add(lblBottleSize, gbc_bottleSize);
+
+                JLabel lblBottleContent = new JLabel(String.valueOf(i.getLevel()));
+                lblBottleContent.setFont(new Font("Tahoma", Font.PLAIN, 14));
+                GridBagConstraints gbc_bottleContent = new GridBagConstraints();
+                gbc_bottleContent.insets = new Insets(0, 0, 5, 5);
+                gbc_bottleContent.gridx = 3;
+                gbc_bottleContent.gridy = row;
+                contentPanel.add(lblBottleContent, gbc_bottleContent);
+
+                JButton btnRefill = new JButton("auffüllen");
+                btnRefill.setPreferredSize(new Dimension(120, Config.buttonHeight));
+                btnRefill.addActionListener(e -> {
+					RefillPanel refillPanel = new RefillPanel(mainFrame, i, "inputs");
+				});
+                GridBagConstraints gbc_refill = new GridBagConstraints();
+                gbc_refill.insets = new Insets(0, 0, 5, 5);
+                gbc_refill.gridx = 4;
+                gbc_refill.gridy = row;
+                contentPanel.add(btnRefill, gbc_refill);
+            }
+
+            revalidate();
+            repaint();
 		}
 	}
 

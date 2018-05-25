@@ -1,5 +1,8 @@
 package de.mannheim.nawabu.cocktail;
 
+import de.mannheim.nawabu.cocktail.model.CocktailDB;
+import de.mannheim.nawabu.cocktail.view.*;
+
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 
@@ -18,7 +21,11 @@ public class CocktailMain {
 
 		CocktailDB db = CocktailDB.getInstance();
 		
-		SelectCocktailPanel cocktailPanel = new SelectCocktailPanel(main);
+		//SelectCocktailPanel cocktailPanel = new SelectCocktailPanel(main);
+        InputsPanel inputs = new InputsPanel(main);
+        //NewRecipePane recipe = new NewRecipePane(main);
+		//RecipePanel recipePanel = new RecipePanel(main);
+
 	}
 
 }

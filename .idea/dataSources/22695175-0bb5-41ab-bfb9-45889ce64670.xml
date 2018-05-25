@@ -12,131 +12,132 @@
     <collation id="4" parent="1" name="NOCASE"/>
     <collation id="5" parent="1" name="RTRIM"/>
     <table id="6" parent="2" name="ingredients"/>
-    <table id="7" parent="2" name="pumps"/>
-    <table id="8" parent="2" name="recipe_ingredients"/>
-    <table id="9" parent="2" name="recipes"/>
-    <table id="10" parent="2" name="sqlite_master">
+    <table id="7" parent="2" name="recipe_ingredients"/>
+    <table id="8" parent="2" name="recipes"/>
+    <table id="9" parent="2" name="sqlite_master">
       <System>1</System>
     </table>
-    <table id="11" parent="2" name="sqlite_sequence">
+    <table id="10" parent="2" name="sqlite_sequence">
       <System>1</System>
     </table>
-    <column id="12" parent="6" name="ingredient_id">
+    <column id="11" parent="6" name="ingredient_id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="13" parent="6" name="name">
+    <column id="12" parent="6" name="name">
       <Position>2</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="14" parent="6" name="size">
+    <column id="13" parent="6" name="size">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="15" parent="6" name="level">
+    <column id="14" parent="6" name="level">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="16" parent="6">
+    <column id="15" parent="6" name="pump">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="16" parent="6" name="ingredients_pump_uindex">
+      <ColNames>pump</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <key id="17" parent="6">
       <ColNames>ingredient_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="17" parent="7" name="pump_id">
+    <column id="18" parent="7" name="recipe_id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="18" parent="7" name="ingredient_id">
+    <column id="19" parent="7" name="ingredient_id">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <key id="19" parent="7">
-      <ColNames>pump_id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="20" parent="7">
-      <ColNames>ingredient_id</ColNames>
-      <RefTableName>ingredients</RefTableName>
-      <RefColNames>ingredient_id</RefColNames>
-      <OnDelete>set-null</OnDelete>
-    </foreign-key>
-    <column id="21" parent="8" name="recipe_id">
-      <Position>1</Position>
+    <column id="20" parent="7" name="amount">
+      <Position>3</Position>
       <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <column id="22" parent="8" name="ingredient_id">
-      <Position>2</Position>
+    <column id="21" parent="7" name="filler">
+      <Position>4</Position>
       <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <index id="23" parent="8" name="sqlite_autoindex_recipe_ingredients_1">
+    <index id="22" parent="7" name="sqlite_autoindex_recipe_ingredients_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>recipe_id
 ingredient_id</ColNames>
       <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
-    <key id="24" parent="8">
+    <key id="23" parent="7">
       <ColNames>recipe_id
 ingredient_id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>sqlite_autoindex_recipe_ingredients_1</UnderlyingIndexName>
     </key>
-    <foreign-key id="25" parent="8">
+    <foreign-key id="24" parent="7">
       <ColNames>recipe_id</ColNames>
       <RefTableName>recipes</RefTableName>
       <RefColNames>recipe_id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="26" parent="8">
+    <foreign-key id="25" parent="7">
       <ColNames>ingredient_id</ColNames>
       <RefTableName>ingredients</RefTableName>
       <RefColNames>ingredient_id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="27" parent="9" name="recipe_id">
+    <column id="26" parent="8" name="recipe_id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="28" parent="9" name="name">
+    <column id="27" parent="8" name="name">
       <Position>2</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="29" parent="9">
+    <key id="28" parent="8">
       <ColNames>recipe_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="30" parent="10" name="type">
+    <column id="29" parent="9" name="type">
       <Position>1</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="31" parent="10" name="name">
+    <column id="30" parent="9" name="name">
       <Position>2</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="32" parent="10" name="tbl_name">
+    <column id="31" parent="9" name="tbl_name">
       <Position>3</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="33" parent="10" name="rootpage">
+    <column id="32" parent="9" name="rootpage">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
     </column>
-    <column id="34" parent="10" name="sql">
+    <column id="33" parent="9" name="sql">
       <Position>5</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="35" parent="11" name="name">
+    <column id="34" parent="10" name="name">
       <Position>1</Position>
     </column>
-    <column id="36" parent="11" name="seq">
+    <column id="35" parent="10" name="seq">
       <Position>2</Position>
     </column>
   </database-model>

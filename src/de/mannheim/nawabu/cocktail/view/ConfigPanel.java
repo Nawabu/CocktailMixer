@@ -1,4 +1,6 @@
-package de.mannheim.nawabu.cocktail;
+package de.mannheim.nawabu.cocktail.view;
+
+import de.mannheim.nawabu.cocktail.Config;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -90,6 +92,9 @@ public class ConfigPanel extends ViewTemplate implements ActionListener {
 		case "inputs":
 			InputsPanel inputs = new InputsPanel(mainFrame);
 			break;
+        case "recipes":
+            RecipePanel recipePanel = new RecipePanel(mainFrame);
+            break;
 		default:
 			break;
 		}
