@@ -16,7 +16,6 @@ public class CocktailDB {
         try {
             openDB();
             createTables();
-            amountIngredients();
         } catch (SQLException e) {
             System.err.println( e.getClass().getName() + ": " + e.getMessage() );
         }
@@ -25,7 +24,13 @@ public class CocktailDB {
     }
 
     private void openDB() throws SQLException {
-        String url = "jdbc:sqlite:" + System.getProperty("user.home") + File.separator + "cocktail.sqlite";
+        String url;
+        String system = System.getProperty("os.name").toLowerCase();
+
+        if(system.contains("win"))
+            url = "jdbc:sqlite:" + System.getProperty("user.home") + File.separator + "cocktail.sqlite";
+        else
+            url = "jdbc:sqlite:" + File.separator + "home" + File.separator + "pi" + File.separator + "CocktailMixer" + File.separator + "cocktail.sqlite";
 
         conn = DriverManager.getConnection(url);
         Statement st = conn.createStatement();
@@ -38,42 +43,79 @@ public class CocktailDB {
         String sql;
         Statement st = conn.createStatement();
 
-        sql = "CREATE TABLE IF NOT EXISTS recipes (\n" +
-                "  recipe_id integer PRIMARY KEY AUTOINCREMENT NOT NULL ,\n" +
-                "  name text NOT NULL\n" +
+        sql = "create table IF NOT EXISTS recipes\n" +
+                "(\n" +
+                "  recipe_id integer not null,\n" +
+                "  name      text    not null,\n" +
+                "  primary key (recipe_id autoincrement)\n" +
                 ");";
         st.executeUpdate(sql);
 
-        sql = "CREATE TABLE IF NOT EXISTS ingredients (\n" +
-                "  ingredient_id integer PRIMARY KEY AUTOINCREMENT NOT NULL ,\n" +
-                "  name text NOT NULL ,\n" +
-                "  size integer NOT NULL ,\n" +
-                "  level integer NOT NULL\n" +
+        sql = "create table IF NOT EXISTS ingredients\n" +
+                "(\n" +
+                "  ingredient_id integer not null,\n" +
+                "  name          text    not null,\n" +
+                "  size          integer not null,\n" +
+                "  level         integer not null,\n" +
+                "  pump          int,\n" +
+                "  primary key (ingredient_id autoincrement)\n" +
                 ");";
         st.executeUpdate(sql);
 
-//        sql = "CREATE TABLE IF NOT EXISTS pumps (\n" +
-//                "  pump_id integer PRIMARY KEY NOT NULL ,\n" +
-//                "  ingredient_id integer ,\n" +
-//                "  FOREIGN KEY (ingredient_id) REFERENCES ingredients (ingredient_id)\n" +
-//                "  ON DELETE SET NULL ON UPDATE NO ACTION\n" +
-//                ");";
-//        st.executeUpdate(sql);
+        sql = "create unique index IF NOT EXISTS ingredients_pump_uindex\n" +
+                "  on ingredients (pump);";
+        st.executeUpdate(sql);
 
-        sql = "CREATE TABLE IF NOT EXISTS recipe_ingredients (\n" +
-                "  recipe_id integer NOT NULL ,\n" +
-                "  ingredient_id integer NOT NULL ,\n" +
-                "  amount integer NOT NULL ,\n" +
-                "  filler integer NOT NULL ,\n" +
-                "  PRIMARY KEY (recipe_id, ingredient_id),\n" +
-                "  FOREIGN KEY (recipe_id) REFERENCES recipes (recipe_id)\n" +
-                "  ON DELETE CASCADE ON UPDATE NO ACTION,\n" +
-                "  FOREIGN KEY (ingredient_id) REFERENCES ingredients(ingredient_id)\n" +
-                "  ON DELETE CASCADE ON UPDATE NO ACTION\n" +
+        sql = "create table IF NOT EXISTS recipe_ingredients\n" +
+                "(\n" +
+                "  recipe_id     integer not null,\n" +
+                "  ingredient_id integer not null,\n" +
+                "  amount        integer not null,\n" +
+                "  filler        integer not null,\n" +
+                "  primary key (recipe_id, ingredient_id),\n" +
+                "  foreign key (recipe_id) references recipes\n" +
+                "    on delete cascade,\n" +
+                "  foreign key (ingredient_id) references ingredients\n" +
+                "    on delete cascade\n" +
                 ");";
         st.executeUpdate(sql);
+
+        sql = "CREATE TABLE IF NOT EXISTS configs(\n" +
+                "  Lock char(1) not null DEFAULT 'X',\n" +
+                "  glass_size integer NOT NULL,\n" +
+                "  password text NOT NULL,\n" +
+                "  constraint PK_CONFIGS PRIMARY KEY (Lock),\n" +
+                "  constraint CK_CONFIGS_Locked CHECK (Lock='X')\n" +
+                ");";
+        st.executeUpdate(sql);
+
+        try {
+            sql = "INSERT INTO configs (glass_size, password) VALUES (500, 'test');";
+            st.executeUpdate(sql);
+        }
+        catch (Exception e) {}
 
         st.close();
+    }
+
+    public int getGlassSize() {
+        String sql = "SELECT glass_size FROM configs;";
+        int size = 0;
+
+        try {
+            Statement st = conn.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+
+            size = rs.getInt("glass_size");
+
+            rs.close();
+            st.close();
+
+        } catch (SQLException e) {
+            System.err.println( e.getClass().getName() + ": " + e.getMessage() );
+        }
+
+        return size;
     }
 
     private void runStatement(String sql) {
@@ -282,6 +324,14 @@ public class CocktailDB {
 
     }
 
+    public Recipe getRecipe(int id) {
+        String sql = String.format("SELECT * FROM recipes WHERE recipe_id=%d;", id);
+
+        ArrayList<Recipe> recipes = runRecipeStatement(sql);
+
+        return recipes.get(0);
+    }
+
     private ArrayList<Recipe> runRecipeStatement(String sql) {
         ArrayList<Recipe> rl = new ArrayList<>();
 
@@ -312,8 +362,13 @@ public class CocktailDB {
                     int size = iSet.getInt("size");
                     int level = iSet.getInt("level");
                     int pump = iSet.getInt("pump");
+                    int amount = iSet.getInt("amount");
+                    int filler = iSet.getInt("filler");
 
-                    r.addIngredient(new Ingredient(iID, iName, size, level, pump));
+                    if(filler == 1)
+                        r.setFiller(new Ingredient(iID, iName, size, level, pump));
+                    else
+                        r.addIngredient(new Ingredient(iID, iName, size, level, pump, amount));
                 }
 
                 iSet.close();

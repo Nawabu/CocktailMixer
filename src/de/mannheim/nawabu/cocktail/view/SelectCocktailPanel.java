@@ -1,5 +1,6 @@
 package de.mannheim.nawabu.cocktail.view;
 
+import de.mannheim.nawabu.cocktail.ArduinoController;
 import de.mannheim.nawabu.cocktail.model.CocktailDB;
 import de.mannheim.nawabu.cocktail.model.Recipe;
 
@@ -12,6 +13,7 @@ import java.util.ArrayList;
 
 public class SelectCocktailPanel extends ViewTemplate implements ActionListener {
     private CocktailDB db = CocktailDB.getInstance();
+    private ArduinoController arduino = ArduinoController.getInstance();
     private int x = 0;
     private int y = 0;
     private int amountRecipes;
@@ -77,7 +79,7 @@ public class SelectCocktailPanel extends ViewTemplate implements ActionListener 
 
 	private void drawCocktailButton(Recipe recipe) {
         JButton btnCocktail = new JButton(recipe.getName());
-        btnCocktail.addActionListener(e -> makeCocktail(recipe));
+        btnCocktail.addActionListener(e -> arduino.makeCocktail(mainFrame, recipe));
         GridBagConstraints gbc_btnCocktail = new GridBagConstraints();
         gbc_btnCocktail.fill = GridBagConstraints.BOTH;
         gbc_btnCocktail.insets = new Insets(0, 0, 10, 10);
@@ -105,9 +107,5 @@ public class SelectCocktailPanel extends ViewTemplate implements ActionListener 
             btnBottomBR.setVisible(true);
         else
             btnBottomBR.setVisible(false);
-    }
-
-    private void makeCocktail(Recipe recipe) {
-	    System.out.println(recipe.getName());
     }
 }

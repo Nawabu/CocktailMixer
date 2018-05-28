@@ -16,6 +16,19 @@ public class Ingredient {
         this.pump = pump;
     }
 
+    public Ingredient(int id, String name, int size, int level, int pump, int amount) {
+        this(id, name, size, level ,pump);
+        this.amount = amount;
+    }
+
+    public boolean isEnough() {
+        return (level > amount);
+    }
+
+    public boolean isMore(int amountAsked) {
+        return (level > amountAsked);
+    }
+
     public int getId() {
         return id;
     }

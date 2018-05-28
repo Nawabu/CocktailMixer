@@ -1,8 +1,10 @@
 package de.mannheim.nawabu.cocktail.view;
 
+import de.mannheim.nawabu.cocktail.ArduinoController;
 import de.mannheim.nawabu.cocktail.CocktailMain;
 import de.mannheim.nawabu.cocktail.model.CocktailDB;
 import de.mannheim.nawabu.cocktail.model.Ingredient;
+import de.mannheim.nawabu.cocktail.model.Recipe;
 
 import javax.swing.*;
 import java.awt.*;
@@ -15,6 +17,13 @@ public class RefillPanel extends ViewTemplate implements ActionListener {
 	private Ingredient ingredient;
 	private String target;
 	private CocktailDB db = CocktailDB.getInstance();
+	private ArduinoController arduino = ArduinoController.getInstance();
+	private Recipe makeCocktail;
+
+	public RefillPanel(JFrame main, Ingredient ingredient, String target, Recipe cocktail) {
+	    this(main, ingredient, target);
+	    this.makeCocktail = cocktail;
+    }
 
 	public RefillPanel(JFrame main, Ingredient ingredient, String target) {
 		super(main);
@@ -81,7 +90,7 @@ public class RefillPanel extends ViewTemplate implements ActionListener {
 
 		switch (e.getActionCommand()) {
 		case "cancel":
-            if(target.equals("main"))
+            if(target.equals("main") || target.equals("make"))
                 cocktailMain = new SelectCocktailPanel(mainFrame);
             else
                 inputsPanel = new InputsPanel(mainFrame);
@@ -96,10 +105,18 @@ public class RefillPanel extends ViewTemplate implements ActionListener {
                 return;
             }
 
-            if(target.equals("main"))
-                cocktailMain = new SelectCocktailPanel(mainFrame);
-            else
-                inputsPanel = new InputsPanel(mainFrame);
+            switch (target) {
+                case "main":
+                    cocktailMain = new SelectCocktailPanel(mainFrame);
+                    break;
+                case "make":
+					makeCocktail = db.getRecipe(makeCocktail.getId());
+                    arduino.makeCocktail(mainFrame, makeCocktail);
+                    break;
+                default:
+                    inputsPanel = new InputsPanel(mainFrame);
+                    break;
+            }
             break;
 		default:
 			break;

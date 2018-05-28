@@ -1,5 +1,6 @@
 package de.mannheim.nawabu.cocktail.view;
 
+import de.mannheim.nawabu.cocktail.ArduinoController;
 import de.mannheim.nawabu.cocktail.Config;
 
 import java.awt.event.ActionEvent;
@@ -19,6 +20,7 @@ import javax.swing.SwingConstants;
 
 public class ConfigPanel extends ViewTemplate implements ActionListener {
 	private JTextField textGlasSize;
+	private ArduinoController arduino = ArduinoController.getInstance();
 	
 	public ConfigPanel(JFrame main) {
 		super(main);
@@ -77,6 +79,16 @@ public class ConfigPanel extends ViewTemplate implements ActionListener {
 		btnRecipes.addActionListener(this);
 		btnRecipes.setActionCommand("recipes");
 		contentPanel.add(btnRecipes, gbc_btnRecipes);
+
+		JButton btnClean = new JButton("Spülen");
+        btnClean.setPreferredSize(new Dimension(120, Config.buttonHeight));
+		GridBagConstraints gbc_btnClean = new GridBagConstraints();
+        gbc_btnClean.insets = new Insets(10, 10, 10, 10);
+        gbc_btnClean.gridx = 1;
+        gbc_btnClean.gridy = 3;
+        btnClean.addActionListener(this);
+        btnClean.setActionCommand("clean");
+		contentPanel.add(btnClean, gbc_btnClean);
 		
 		revalidate();
 		repaint();
@@ -94,6 +106,9 @@ public class ConfigPanel extends ViewTemplate implements ActionListener {
 			break;
         case "recipes":
             RecipePanel recipePanel = new RecipePanel(mainFrame);
+            break;
+        case "clean":
+            arduino.cleanPumps(mainFrame, 10000);
             break;
 		default:
 			break;

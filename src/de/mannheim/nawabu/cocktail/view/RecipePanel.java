@@ -103,11 +103,11 @@ public class RecipePanel extends ViewTemplate implements ActionListener {
         ArrayList<Recipe> recipes = db.getRecipes(page);
 
         for (Recipe i : recipes) {
-            addRecipe(i.getId(), i.getName(), i.getIngredients());
+            addRecipe(i.getId(), i.getName(), i.getIngredients(), i.getFiller());
         }
     }
 
-	private void addRecipe(int id, String name, ArrayList<Ingredient> ingredients) {
+	private void addRecipe(int id, String name, ArrayList<Ingredient> ingredients, Ingredient filler) {
         JLabel lblName = new JLabel(name);
         lblName.setFont(new Font("Tahoma", Font.PLAIN, 14));
         GridBagConstraints gbc_lblName = new GridBagConstraints();
@@ -120,8 +120,10 @@ public class RecipePanel extends ViewTemplate implements ActionListener {
         for (Ingredient i : ingredients) {
             content.append(i.getName()).append(", ");
         }
-        if(content.length()>0)
-            content = new StringBuilder(content.substring(0, content.length() - 2));
+        content.append(filler.getName());
+
+//        if(content.length()>0)
+//            content = new StringBuilder(content.substring(0, content.length() - 2));
 
         JLabel lblContent = new JLabel(content.toString());
         lblContent.setFont(new Font("Tahoma", Font.PLAIN, 14));

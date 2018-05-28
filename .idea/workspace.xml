@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="CocktailMixer:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="4c9b425c-5fcd-4d22-9071-feb43dec9d46" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/CocktailDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/Ingredient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/Recipe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/IngredientsPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/NewRecipePane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/RecipePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/RefillPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/SelectCocktailPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/CocktailMixer_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jSerialComm_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/ArduinoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/CocktailProgressPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/22695175-0bb5-41ab-bfb9-45889ce64670.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/22695175-0bb5-41ab-bfb9-45889ce64670.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4d843081-7bed-44a6-af37-825bcc5622e3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/CocktailDB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CocktailMixer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CocktailMixer.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/CocktailMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/CocktailMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/ConfigPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/ConfigPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/IngredientsPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/InputsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/InputsPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/NewIngredientPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/NewIngredientPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/SelectCocktailPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/ViewTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/ViewTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/CocktailDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/CocktailDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/Ingredient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/ConfigPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/ConfigPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/RecipePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/RecipePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/RefillPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/RefillPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/SelectCocktailPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/SelectCocktailPanel.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,6 +31,11 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/CocktailMixer$CocktailMain.ic" NAME="CocktailMain Coverage Results" MODIFIED="1527435146499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>de.mannheim.nawabu.cocktail.view.*</FILTER>
+    </SUITE>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -63,21 +69,7 @@
         <item name="cocktail.sqlite" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-        <item name="ingredients: table" type="ffe0bd85:SqliteImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cocktail.sqlite" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-        <item name="recipe_ingredients: table" type="ffe0bd85:SqliteImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cocktail.sqlite" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-        <item name="recipes: table" type="ffe0bd85:SqliteImplModel$Table" />
+        <item name="configs: table" type="ffe0bd85:SqliteImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -92,8 +84,8 @@
       <file leaf-file-name="CocktailDB.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/CocktailDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2614">
-              <caret line="264" column="25" selection-start-line="264" selection-start-column="25" selection-end-line="264" selection-end-column="25" />
+            <state>
+              <caret line="326" column="17" selection-start-line="326" selection-start-column="17" selection-end-line="326" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,60 +93,62 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Ingredient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/Ingredient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/22695175-0bb5-41ab-bfb9-45889ce64670/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="571">
-              <caret line="62" column="39" lean-forward="true" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
+            <state relative-caret-position="1139">
+              <caret line="67" selection-start-line="67" selection-end-line="67" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="recipes" pinned="false" current-in-tab="false">
-        <entry file="das://22695175-0bb5-41ab-bfb9-45889ce64670/schema/main/table/recipes">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="recipe_ingredients" pinned="false" current-in-tab="false">
-        <entry file="das://22695175-0bb5-41ab-bfb9-45889ce64670/schema/main/table/recipe_ingredients">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SelectCocktailPanel.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SelectCocktailPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/SelectCocktailPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="717">
-              <caret line="110" column="45" lean-forward="true" selection-start-line="110" selection-start-column="45" selection-end-line="110" selection-end-column="45" />
+            <state relative-caret-position="68">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfigPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/ConfigPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="421">
+              <caret line="87" column="30" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArduinoController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/ArduinoController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1465">
+              <caret line="118" column="5" lean-forward="true" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
               <folding>
-                <element signature="e#2952#2953#0" expanded="true" />
-                <element signature="e#3001#3002#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InputsPanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/InputsPanel.java">
+      <file leaf-file-name="CocktailProgressPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/CocktailProgressPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RefillPanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/RefillPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="91" column="67" lean-forward="true" selection-start-line="91" selection-start-column="67" selection-end-line="91" selection-end-column="67" />
+            <state relative-caret-position="969">
+              <caret line="60" column="16" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -163,19 +157,25 @@
         <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/CocktailMain.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+              <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewIngredientPanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/NewIngredientPanel.java">
+      <file leaf-file-name="RefillPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/RefillPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="114" column="13" lean-forward="true" selection-start-line="107" selection-start-column="12" selection-end-line="114" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="1751">
+              <caret line="112" column="70" selection-start-line="112" selection-start-column="70" selection-end-line="112" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecipePanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/RecipePanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1632">
+              <caret line="105" column="79" selection-start-line="105" selection-start-column="79" selection-end-line="105" selection-end-column="79" />
             </state>
           </provider>
         </entry>
@@ -203,18 +203,20 @@
         <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/CocktailDB.java" />
         <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/IngredientsPanel.java" />
         <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/Recipe.java" />
-        <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/Ingredient.java" />
         <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/NewRecipePane.java" />
-        <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/RecipePanel.java" />
-        <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/ConfigPanel.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/22695175-0bb5-41ab-bfb9-45889ce64670/console.sql" />
-        <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/CocktailDB.java" />
-        <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/SelectCocktailPanel.java" />
         <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/IngredientsPanel.java" />
         <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/NewIngredientPanel.java" />
-        <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/CocktailMain.java" />
         <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/InputsPanel.java" />
+        <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/CocktailProgressPanel.java" />
+        <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/Ingredient.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/22695175-0bb5-41ab-bfb9-45889ce64670/console.sql" />
+        <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/CocktailDB.java" />
         <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/RefillPanel.java" />
+        <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/RecipePanel.java" />
+        <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/ArduinoController.java" />
+        <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/SelectCocktailPanel.java" />
+        <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/ConfigPanel.java" />
+        <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/CocktailMain.java" />
       </list>
     </option>
   </component>
@@ -234,11 +236,40 @@
     <option name="height" value="876" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="PackagesPane" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CocktailMixer" type="58d84e3e:PackageViewProjectNode" />
+              <item name="CocktailMixer" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="CocktailMixer" type="58d84e3e:PackageViewProjectNode" />
+              <item name="CocktailMixer" type="616d4139:PackageViewModuleNode" />
+              <item name="de.mannheim.nawabu.cocktail" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="CocktailMixer" type="58d84e3e:PackageViewProjectNode" />
+              <item name="CocktailMixer" type="616d4139:PackageViewModuleNode" />
+              <item name="de.mannheim.nawabu.cocktail" type="1f31426a:PackageElementNode" />
+              <item name="model" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="CocktailMixer" type="58d84e3e:PackageViewProjectNode" />
+              <item name="CocktailMixer" type="616d4139:PackageViewModuleNode" />
+              <item name="de.mannheim.nawabu.cocktail" type="1f31426a:PackageElementNode" />
+              <item name="view" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -279,8 +310,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -290,7 +319,7 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/lib/sqlite-jdbc-3.20.1.jar!/" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/jSerialComm-2.0.2.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -375,6 +404,13 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SQLScriptSettings">
+    <option name="matrix">
+      <map>
+        <entry key="SQLITE.CreateComplete" value="ConstraintContext=CONSTRAINT_IN_TABLE" />
+      </map>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -390,45 +426,65 @@
       <workItem from="1527099682140" duration="8785000" />
       <workItem from="1527180201376" duration="17217000" />
       <workItem from="1527234213734" duration="24567000" />
+      <workItem from="1527264267754" duration="599000" />
+      <workItem from="1527325227980" duration="4585000" />
+      <workItem from="1527348204034" duration="1178000" />
+      <workItem from="1527349398516" duration="1819000" />
+      <workItem from="1527413159912" duration="25000" />
+      <workItem from="1527413233242" duration="10312000" />
+      <workItem from="1527431527332" duration="5306000" />
+      <workItem from="1527535257169" duration="1249000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51177000" />
+    <option name="totallyTimeSpent" value="76250000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="bottom" id="Inspection Results" weight="0.32897604" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.1444563" />
-      <window_info id="Structure" order="1" sideWeight="0.50108933" side_tool="true" weight="0.26279318" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32897604" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32897604" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.15686275" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.21132898" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Database Console" order="0" weight="0.22004357" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49891067" visible="true" weight="0.15138593" />
-      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6372549" visible="true" weight="0.1641791" />
+      <window_info anchor="bottom" id="Statistic" order="13" weight="0.32897604" />
+      <window_info anchor="right" id="Database" order="6" sideWeight="0.49891067" visible="true" weight="0.1444563" />
+      <window_info id="Structure" order="1" sideWeight="0.3627451" side_tool="true" visible="true" weight="0.1641791" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39978212" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Database Console" order="0" weight="0.22004357" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="SQL Generator" order="13" weight="0.32897604" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="9" sideWeight="0.50108933" side_tool="true" visible="true" weight="0.1444563" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32897604" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,7 +493,45 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="output" />
+      </configuration>
+    </watches-manager>
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/RefillPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="91" column="67" lean-forward="true" selection-start-line="91" selection-start-column="67" selection-end-line="91" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/CocktailMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/NewIngredientPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="114" column="13" lean-forward="true" selection-start-line="107" selection-start-column="12" selection-end-line="114" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/SelectCocktailPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1717">
+          <caret line="110" column="45" lean-forward="true" selection-start-line="110" selection-start-column="45" selection-end-line="110" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/CocktailDB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1207">
@@ -480,13 +574,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
-          <folding>
-            <element signature="e#633#634#0" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
-            <element signature="e#733#734#0" expanded="true" />
-            <element signature="e#769#770#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -494,12 +581,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="40" column="39" lean-forward="true" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
-          <folding>
-            <element signature="e#709#710#0" expanded="true" />
-            <element signature="e#738#739#0" expanded="true" />
-            <element signature="e#779#780#0" expanded="true" />
-            <element signature="e#815#816#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -598,13 +679,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="das://22695175-0bb5-41ab-bfb9-45889ce64670/schema/main/table/ingredient" />
-    <entry file="das://22695175-0bb5-41ab-bfb9-45889ce64670/schema/main/table/sqlite_master">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://22695175-0bb5-41ab-bfb9-45889ce64670/schema/main/table/pumps" />
     <entry file="uml://DATABASE/22695175-0bb5-41ab-bfb9-45889ce64670.TABLE:main.recipe_ingredients">
       <provider selected="true" editor-type-id="UmlEditorProvider">
@@ -628,61 +702,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/ViewTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/Ingredient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-          <folding>
-            <element signature="e#709#710#0" expanded="true" />
-            <element signature="e#738#739#0" expanded="true" />
-            <element signature="e#779#780#0" expanded="true" />
-            <element signature="e#815#816#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/Recipe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
-          <folding>
-            <element signature="e#633#634#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://22695175-0bb5-41ab-bfb9-45889ce64670/schema/main/table/recipes">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/ConfigPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="95" column="65" selection-start-line="95" selection-start-column="65" selection-end-line="95" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/IngredientsPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="404">
           <caret line="69" column="46" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/RecipePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="58" column="23" lean-forward="true" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -702,18 +725,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/NewIngredientPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="114" column="13" lean-forward="true" selection-start-line="107" selection-start-column="12" selection-end-line="114" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/CocktailDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2614">
-          <caret line="264" column="25" selection-start-line="264" selection-start-column="25" selection-end-line="264" selection-end-column="25" />
+        <state relative-caret-position="1734">
+          <caret line="114" column="13" selection-start-line="107" selection-start-column="12" selection-end-line="114" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -722,8 +735,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/InputsPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
+        <state relative-caret-position="1785">
+          <caret line="120" selection-start-line="120" selection-end-line="120" />
         </state>
       </provider>
     </entry>
@@ -734,34 +747,151 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://22695175-0bb5-41ab-bfb9-45889ce64670/schema/main/table/sqlite_master">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://22695175-0bb5-41ab-bfb9-45889ce64670/schema/main/table/sqlite_sequence">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/Recipe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+          <folding>
+            <element signature="e#633#634#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://22695175-0bb5-41ab-bfb9-45889ce64670/schema/main/table/configs">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/Ingredient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://22695175-0bb5-41ab-bfb9-45889ce64670/schema/main/table/recipes">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/22695175-0bb5-41ab-bfb9-45889ce64670.SCHEMA:main">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>22695175-0bb5-41ab-bfb9-45889ce64670.SCHEMA:main</OriginalElement>
+          <nodes>
+            <node x="" y="">22695175-0bb5-41ab-bfb9-45889ce64670.TABLE:main.configs</node>
+            <node x="" y="">22695175-0bb5-41ab-bfb9-45889ce64670.TABLE:main.ingredients</node>
+            <node x="" y="">22695175-0bb5-41ab-bfb9-45889ce64670.TABLE:main.sqlite_sequence</node>
+            <node x="" y="">22695175-0bb5-41ab-bfb9-45889ce64670.TABLE:main.recipe_ingredients</node>
+            <node x="" y="">22695175-0bb5-41ab-bfb9-45889ce64670.TABLE:main.sqlite_master</node>
+            <node x="" y="">22695175-0bb5-41ab-bfb9-45889ce64670.TABLE:main.recipes</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="258.0" y="246.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/22695175-0bb5-41ab-bfb9-45889ce64670/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="62" column="39" lean-forward="true" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
+        <state relative-caret-position="1139">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/CocktailDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="326" column="17" selection-start-line="326" selection-start-column="17" selection-end-line="326" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/RefillPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1751">
+          <caret line="112" column="70" selection-start-line="112" selection-start-column="70" selection-end-line="112" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/RecipePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1632">
+          <caret line="105" column="79" selection-start-line="105" selection-start-column="79" selection-end-line="105" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/ViewTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/CocktailProgressPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="60" column="16" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/ConfigPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="87" column="30" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/SelectCocktailPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/CocktailMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/RefillPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/ArduinoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="91" column="67" lean-forward="true" selection-start-line="91" selection-start-column="67" selection-end-line="91" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/SelectCocktailPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="717">
-          <caret line="110" column="45" lean-forward="true" selection-start-line="110" selection-start-column="45" selection-end-line="110" selection-end-column="45" />
+        <state relative-caret-position="1465">
+          <caret line="118" column="5" lean-forward="true" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
           <folding>
-            <element signature="e#2952#2953#0" expanded="true" />
-            <element signature="e#3001#3002#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -772,10 +902,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>CocktailMixer:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -842,7 +974,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>sqlite-jdbc-3.20.1</last-edited>
+          <last-edited>jSerialComm-2.0.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
