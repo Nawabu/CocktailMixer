@@ -2,25 +2,24 @@ package de.mannheim.nawabu.cocktail.view;
 
 import de.mannheim.nawabu.cocktail.ArduinoController;
 import de.mannheim.nawabu.cocktail.Config;
+import de.mannheim.nawabu.cocktail.model.CocktailDB;
 
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JLabel;
-import java.awt.Dimension;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-import java.awt.Insets;
-import java.awt.Font;
 import javax.swing.SwingConstants;
 
 public class ConfigPanel extends ViewTemplate implements ActionListener {
-	private JTextField textGlasSize;
+	private JTextField textGlassSize;
+	private JLabel lblInfo;
 	private ArduinoController arduino = ArduinoController.getInstance();
+	private CocktailDB db = CocktailDB.getInstance();
 	
 	public ConfigPanel(JFrame main) {
 		super(main);
@@ -33,37 +32,40 @@ public class ConfigPanel extends ViewTemplate implements ActionListener {
 		GridBagLayout gridBagLayout = new GridBagLayout();
 		contentPanel.setLayout(gridBagLayout);
 		
-		JLabel lblGlas = new JLabel("Glasgröße (ml):");
-		lblGlas.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		GridBagConstraints gbc_lblGlas = new GridBagConstraints();
-		gbc_lblGlas.insets = new Insets(10, 10, 10, 10);
-		gbc_lblGlas.gridx = 0;
-		gbc_lblGlas.gridy = 0;
-		contentPanel.add(lblGlas, gbc_lblGlas);
+		JLabel lblGlass = new JLabel("Glasgröße (ml):");
+		lblGlass.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		GridBagConstraints gbc_lblGlass = new GridBagConstraints();
+		gbc_lblGlass.insets = new Insets(0, 0, 10, 10);
+		gbc_lblGlass.gridx = 0;
+		gbc_lblGlass.gridy = 0;
+		contentPanel.add(lblGlass, gbc_lblGlass);
 		
-		textGlasSize = new JTextField();
-		textGlasSize.setHorizontalAlignment(SwingConstants.CENTER);
-		textGlasSize.setFont(new Font("Tahoma", Font.BOLD, 14));
-		textGlasSize.setPreferredSize(new Dimension(150, 40));
-		GridBagConstraints gbc_textGlasSize = new GridBagConstraints();
-		gbc_textGlasSize.insets = new Insets(10, 10, 10, 10);
-		gbc_textGlasSize.gridx = 1;
-		gbc_textGlasSize.gridy = 0;
-		contentPanel.add(textGlasSize, gbc_textGlasSize);
-		textGlasSize.setColumns(10);
+		textGlassSize = new JTextField();
+		textGlassSize.setText(String.valueOf(db.getGlassSize()));
+		textGlassSize.setHorizontalAlignment(SwingConstants.CENTER);
+		textGlassSize.setFont(new Font("Tahoma", Font.BOLD, 14));
+		textGlassSize.setPreferredSize(new Dimension(150, 40));
+		GridBagConstraints gbc_textGlassSize = new GridBagConstraints();
+		gbc_textGlassSize.insets = new Insets(0, 0, 10, 10);
+		gbc_textGlassSize.gridx = 1;
+		gbc_textGlassSize.gridy = 0;
+		contentPanel.add(textGlassSize, gbc_textGlassSize);
+		textGlassSize.setColumns(10);
 		
 		JButton btnSaveGlas = new JButton("speichern");
 		btnSaveGlas.setPreferredSize(new Dimension(120, Config.buttonHeight));
 		GridBagConstraints gbc_btnSaveGlas = new GridBagConstraints();
-		gbc_btnSaveGlas.insets = new Insets(10, 10, 10, 10);
+		gbc_btnSaveGlas.insets = new Insets(0, 0, 10, 10);
 		gbc_btnSaveGlas.gridx = 2;
 		gbc_btnSaveGlas.gridy = 0;
+		btnSaveGlas.addActionListener(this);
+		btnSaveGlas.setActionCommand("glassSize");
 		contentPanel.add(btnSaveGlas, gbc_btnSaveGlas);
 		
-		JButton btnInputs = new JButton("Anschl\u00FCsse");
+		JButton btnInputs = new JButton("Anschlüsse");
 		btnInputs.setPreferredSize(new Dimension(120, Config.buttonHeight));
 		GridBagConstraints gbc_btnInputs = new GridBagConstraints();
-		gbc_btnInputs.insets = new Insets(10, 10, 10, 10);
+		gbc_btnInputs.insets = new Insets(0, 0, 10, 10);
 		gbc_btnInputs.gridx = 1;
 		gbc_btnInputs.gridy = 1;
 		btnInputs.addActionListener(this);
@@ -73,7 +75,7 @@ public class ConfigPanel extends ViewTemplate implements ActionListener {
 		JButton btnRecipes = new JButton("Rezepte");
 		btnRecipes.setPreferredSize(new Dimension(120, Config.buttonHeight));
 		GridBagConstraints gbc_btnRecipes = new GridBagConstraints();
-		gbc_btnRecipes.insets = new Insets(10, 10, 10, 10);
+		gbc_btnRecipes.insets = new Insets(0, 0, 10, 10);
 		gbc_btnRecipes.gridx = 1;
 		gbc_btnRecipes.gridy = 2;
 		btnRecipes.addActionListener(this);
@@ -83,13 +85,21 @@ public class ConfigPanel extends ViewTemplate implements ActionListener {
 		JButton btnClean = new JButton("Spülen");
         btnClean.setPreferredSize(new Dimension(120, Config.buttonHeight));
 		GridBagConstraints gbc_btnClean = new GridBagConstraints();
-        gbc_btnClean.insets = new Insets(10, 10, 10, 10);
+        gbc_btnClean.insets = new Insets(0, 0, 10, 10);
         gbc_btnClean.gridx = 1;
         gbc_btnClean.gridy = 3;
         btnClean.addActionListener(this);
         btnClean.setActionCommand("clean");
 		contentPanel.add(btnClean, gbc_btnClean);
-		
+
+        lblInfo = new JLabel(" ");
+        lblInfo.setFont(new Font("Tahoma", Font.BOLD, 14));
+        GridBagConstraints gbc_lblInfo = new GridBagConstraints();
+        gbc_lblInfo.insets = new Insets(0, 0, 10, 10);
+        gbc_lblInfo.gridx = 1;
+        gbc_lblInfo.gridy = 4;
+        contentPanel.add(lblInfo, gbc_lblInfo);
+
 		revalidate();
 		repaint();
 	}
@@ -99,16 +109,34 @@ public class ConfigPanel extends ViewTemplate implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		switch (e.getActionCommand()) {
 		case "cancel":
-			SelectCocktailPanel cocktail = new SelectCocktailPanel(mainFrame);
+			new SelectCocktailPanel(mainFrame);
 			break;
 		case "inputs":
-			InputsPanel inputs = new InputsPanel(mainFrame);
+			new InputsPanel(mainFrame);
 			break;
         case "recipes":
-            RecipePanel recipePanel = new RecipePanel(mainFrame);
+            new RecipePanel(mainFrame);
             break;
         case "clean":
-            arduino.cleanPumps(mainFrame, 10000);
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    arduino.cleanPumps(mainFrame, 10000);
+                }
+            }).start();
+
+            break;
+        case "glassSize":
+            try {
+                int size = Integer.parseInt(textGlassSize.getText());
+                db.setGlassSize(size);
+                lblInfo.setForeground(Color.BLUE);
+                lblInfo.setText("Glasgröße gespeichert!");
+            }
+            catch (NumberFormatException ex) {
+                lblInfo.setForeground(Color.RED);
+                lblInfo.setText("Für Größe bitte nur Zahlen eingeben.");
+            }
             break;
 		default:
 			break;

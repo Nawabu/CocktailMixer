@@ -54,6 +54,13 @@ public class CocktailProgressPanel extends ViewTemplate {
         repaint();
     }
 
+    public synchronized void increaseProgress(int progress) {
+        progressBar.setValue(progressBar.getValue()+progress);
+        System.out.println("progress");
+        revalidate();
+        repaint();
+    }
+
     public void setToMax() {
         progressBar.setValue(progressBar.getMaximum());
 

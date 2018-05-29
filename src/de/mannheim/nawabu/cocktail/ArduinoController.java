@@ -5,6 +5,7 @@ import de.mannheim.nawabu.cocktail.model.CocktailDB;
 import de.mannheim.nawabu.cocktail.model.Ingredient;
 import de.mannheim.nawabu.cocktail.model.Recipe;
 import de.mannheim.nawabu.cocktail.view.CocktailProgressPanel;
+import de.mannheim.nawabu.cocktail.view.ConfigPanel;
 import de.mannheim.nawabu.cocktail.view.RefillPanel;
 import de.mannheim.nawabu.cocktail.view.SelectCocktailPanel;
 
@@ -35,6 +36,16 @@ public class ArduinoController {
 
         CocktailProgressPanel progressPanel = new CocktailProgressPanel(main, duration/100);
         waitForFinishProgress(progressPanel);
+
+        progressPanel.setLblCocktailStep("Spülvorgang abgeschlossen!");
+        progressPanel.setToMax();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        new ConfigPanel(main);
     }
 
     public void makeCocktail(JFrame main, Recipe cocktail) {
@@ -43,18 +54,17 @@ public class ArduinoController {
         int fillAmount = glassSize;
         int progress = 0;
         CocktailProgressPanel progressPanel = new CocktailProgressPanel(main, glassSize);
-        RefillPanel refillPanel;
 
         for(Ingredient i: cocktail.getIngredients()) {
             fillAmount -= i.getAmount()*10;
             if(!i.isEnough()) {
-                refillPanel = new RefillPanel(main, i, "make", cocktail);
+                new RefillPanel(main, i, "make", cocktail);
                 return;
             }
         }
 
         if(!cocktail.getFiller().isMore(fillAmount)) {
-            refillPanel = new RefillPanel(main, cocktail.getFiller(), "make", cocktail);
+            new RefillPanel(main, cocktail.getFiller(), "make", cocktail);
             return;
         }
 
@@ -71,7 +81,7 @@ public class ArduinoController {
         }
 
         System.out.println(String.format("c,%d,%d", cocktail.getFiller().getPump(), (glassSize-progress)/10));
-
+        progressPanel.setLblCocktailStep(cocktail.getFiller().getName());
         output.print(String.format("c,%d,%d\n", cocktail.getFiller().getPump(), glassSize-progress));
         output.flush();
         waitForFinish();
@@ -81,13 +91,13 @@ public class ArduinoController {
         progressPanel.setLblCocktailStep(cocktail.getName() + " ist fertig!");
         progressPanel.setToMax();
 
-//        try {
-//            Thread.sleep(1000);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
-        SelectCocktailPanel cocktailPanel = new SelectCocktailPanel(main);
+        new SelectCocktailPanel(main);
     }
 
     private void waitForFinishProgress(CocktailProgressPanel progressPanel) {
@@ -110,12 +120,10 @@ public class ArduinoController {
 
                 c = (char) cN;
             }
-            input.skip(1000);
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-//        System.out.println("finished");
     }
 
     private void waitForFinish() {

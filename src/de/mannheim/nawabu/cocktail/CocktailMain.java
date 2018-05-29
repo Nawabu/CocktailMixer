@@ -21,13 +21,13 @@ public class CocktailMain {
 
 		CocktailDB db = CocktailDB.getInstance();
 		
-//		SelectCocktailPanel cocktailPanel = new SelectCocktailPanel(main);
+		SelectCocktailPanel cocktailPanel = new SelectCocktailPanel(main);
         //InputsPanel inputs = new InputsPanel(main);
         //NewRecipePane recipe = new NewRecipePane(main);
 		//RecipePanel recipePanel = new RecipePanel(main);
 
-		ArduinoController arduino = ArduinoController.getInstance();
-		arduino.cleanPumps(main, 10000);
+//		ArduinoController arduino = ArduinoController.getInstance();
+//		arduino.cleanPumps(main, 10000);
 	}
 
 }

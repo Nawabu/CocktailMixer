@@ -7,20 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c9b425c-5fcd-4d22-9071-feb43dec9d46" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/CocktailMixer_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jSerialComm_2_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/ArduinoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/CocktailProgressPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/22695175-0bb5-41ab-bfb9-45889ce64670.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/22695175-0bb5-41ab-bfb9-45889ce64670.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CocktailMixer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CocktailMixer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/ArduinoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/ArduinoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/CocktailMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/CocktailMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/CocktailDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/CocktailDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/Ingredient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/CocktailProgressPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/CocktailProgressPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/ConfigPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/ConfigPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/RecipePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/RecipePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/InputsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/InputsPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/RefillPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/RefillPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/SelectCocktailPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/SelectCocktailPanel.java" afterDir="false" />
     </list>
@@ -33,7 +26,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/CocktailMixer$CocktailMain.ic" NAME="CocktailMain Coverage Results" MODIFIED="1527435146499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/CocktailMixer$CocktailMain.ic" NAME="CocktailMain Coverage Results" MODIFIED="1527617483359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>de.mannheim.nawabu.cocktail.view.*</FILTER>
     </SUITE>
   </component>
@@ -84,20 +77,11 @@
       <file leaf-file-name="CocktailDB.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/CocktailDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="326" column="17" selection-start-line="326" selection-start-column="17" selection-end-line="326" selection-end-column="17" />
+            <state relative-caret-position="378">
+              <caret line="183" column="30" lean-forward="true" selection-start-line="183" selection-start-column="30" selection-end-line="183" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ingredient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/Ingredient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -105,8 +89,8 @@
       <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/22695175-0bb5-41ab-bfb9-45889ce64670/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1139">
-              <caret line="67" selection-start-line="67" selection-end-line="67" />
+            <state relative-caret-position="520">
+              <caret line="76" selection-start-line="76" selection-end-line="76" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -114,8 +98,8 @@
       <file leaf-file-name="SelectCocktailPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/SelectCocktailPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            <state relative-caret-position="217">
+              <caret line="81" column="110" selection-start-line="81" selection-start-column="110" selection-end-line="81" selection-end-column="110" />
             </state>
           </provider>
         </entry>
@@ -123,17 +107,21 @@
       <file leaf-file-name="ConfigPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/ConfigPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="87" column="30" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
+            <state relative-caret-position="323">
+              <caret line="125" column="23" selection-start-line="125" selection-start-column="23" selection-end-line="125" selection-end-column="23" />
+              <folding>
+                <element signature="e#4381#4382#0" expanded="true" />
+                <element signature="e#4457#4458#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArduinoController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ArduinoController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/ArduinoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1465">
-              <caret line="118" column="5" lean-forward="true" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
+            <state relative-caret-position="425">
+              <caret line="86" column="24" lean-forward="true" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -141,11 +129,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="InputsPanel.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/InputsPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="472">
+              <caret line="140" column="36" selection-start-line="140" selection-start-column="36" selection-end-line="140" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="CocktailProgressPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/CocktailProgressPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="60" column="16" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
+            <state relative-caret-position="833">
+              <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -156,8 +153,8 @@
       <file leaf-file-name="CocktailMain.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/CocktailMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+            <state relative-caret-position="391">
+              <caret line="29" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -165,17 +162,8 @@
       <file leaf-file-name="RefillPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/RefillPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1751">
-              <caret line="112" column="70" selection-start-line="112" selection-start-column="70" selection-end-line="112" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RecipePanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/RecipePanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1632">
-              <caret line="105" column="79" selection-start-line="105" selection-start-column="79" selection-end-line="105" selection-end-column="79" />
+            <state relative-caret-position="1326">
+              <caret line="87" selection-start-line="87" selection-end-line="87" />
             </state>
           </provider>
         </entry>
@@ -189,6 +177,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>threa</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -206,17 +199,17 @@
         <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/NewRecipePane.java" />
         <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/IngredientsPanel.java" />
         <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/NewIngredientPanel.java" />
-        <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/InputsPanel.java" />
-        <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/CocktailProgressPanel.java" />
         <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/Ingredient.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/22695175-0bb5-41ab-bfb9-45889ce64670/console.sql" />
-        <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/CocktailDB.java" />
-        <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/RefillPanel.java" />
         <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/RecipePanel.java" />
-        <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/ArduinoController.java" />
-        <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/SelectCocktailPanel.java" />
-        <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/ConfigPanel.java" />
+        <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/CocktailProgressPanel.java" />
         <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/CocktailMain.java" />
+        <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/ConfigPanel.java" />
+        <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/SelectCocktailPanel.java" />
+        <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/RefillPanel.java" />
+        <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/ArduinoController.java" />
+        <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/CocktailDB.java" />
+        <option value="$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/InputsPanel.java" />
       </list>
     </option>
   </component>
@@ -240,36 +233,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="CocktailMixer" type="58d84e3e:PackageViewProjectNode" />
-              <item name="CocktailMixer" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="CocktailMixer" type="58d84e3e:PackageViewProjectNode" />
-              <item name="CocktailMixer" type="616d4139:PackageViewModuleNode" />
-              <item name="de.mannheim.nawabu.cocktail" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="CocktailMixer" type="58d84e3e:PackageViewProjectNode" />
-              <item name="CocktailMixer" type="616d4139:PackageViewModuleNode" />
-              <item name="de.mannheim.nawabu.cocktail" type="1f31426a:PackageElementNode" />
-              <item name="model" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="CocktailMixer" type="58d84e3e:PackageViewProjectNode" />
-              <item name="CocktailMixer" type="616d4139:PackageViewModuleNode" />
-              <item name="de.mannheim.nawabu.cocktail" type="1f31426a:PackageElementNode" />
-              <item name="view" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -310,6 +273,36 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CocktailMixer" type="58d84e3e:PackageViewProjectNode" />
+              <item name="CocktailMixer" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="CocktailMixer" type="58d84e3e:PackageViewProjectNode" />
+              <item name="CocktailMixer" type="616d4139:PackageViewModuleNode" />
+              <item name="de.mannheim.nawabu.cocktail" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="CocktailMixer" type="58d84e3e:PackageViewProjectNode" />
+              <item name="CocktailMixer" type="616d4139:PackageViewModuleNode" />
+              <item name="de.mannheim.nawabu.cocktail" type="1f31426a:PackageElementNode" />
+              <item name="model" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="CocktailMixer" type="58d84e3e:PackageViewProjectNode" />
+              <item name="CocktailMixer" type="616d4139:PackageViewModuleNode" />
+              <item name="de.mannheim.nawabu.cocktail" type="1f31426a:PackageElementNode" />
+              <item name="view" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -434,11 +427,12 @@
       <workItem from="1527413233242" duration="10312000" />
       <workItem from="1527431527332" duration="5306000" />
       <workItem from="1527535257169" duration="1249000" />
+      <workItem from="1527613972364" duration="7421000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76250000" />
+    <option name="totallyTimeSpent" value="83671000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -453,27 +447,28 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="bottom" id="Statistic" order="13" weight="0.32897604" />
+      <window_info anchor="right" id="Database" order="6" sideWeight="0.49723756" visible="true" weight="0.1444563" />
+      <window_info id="Structure" order="1" sideWeight="0.3638344" side_tool="true" visible="true" weight="0.16577825" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39978212" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32897604" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.15686275" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.21132898" />
       <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="right" id="Coverage" order="9" sideWeight="0.50276244" side_tool="true" weight="0.1444563" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6372549" visible="true" weight="0.1641791" />
-      <window_info anchor="bottom" id="Statistic" order="13" weight="0.32897604" />
-      <window_info anchor="right" id="Database" order="6" sideWeight="0.49891067" visible="true" weight="0.1444563" />
-      <window_info id="Structure" order="1" sideWeight="0.3627451" side_tool="true" visible="true" weight="0.1641791" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="4" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.63616556" visible="true" weight="0.16577825" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.39978212" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -481,7 +476,6 @@
       <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="bottom" id="SQL Generator" order="13" weight="0.32897604" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="right" id="Coverage" order="9" sideWeight="0.50108933" side_tool="true" visible="true" weight="0.1444563" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32897604" />
@@ -723,30 +717,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/NewIngredientPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1734">
-          <caret line="114" column="13" selection-start-line="107" selection-start-column="12" selection-end-line="114" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/InputsPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="120" selection-start-line="120" selection-end-line="120" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://22695175-0bb5-41ab-bfb9-45889ce64670/schema/main/table/ingredients">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://22695175-0bb5-41ab-bfb9-45889ce64670/schema/main/table/sqlite_master">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -765,9 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
-          <folding>
-            <element signature="e#633#634#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -817,30 +784,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/22695175-0bb5-41ab-bfb9-45889ce64670/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/CocktailDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="326" column="17" selection-start-line="326" selection-start-column="17" selection-end-line="326" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/RefillPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1751">
-          <caret line="112" column="70" selection-start-line="112" selection-start-column="70" selection-end-line="112" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/RecipePanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1632">
@@ -855,44 +798,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/CocktailProgressPanel.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/22695175-0bb5-41ab-bfb9-45889ce64670/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="60" column="16" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
+        <state relative-caret-position="520">
+          <caret line="76" selection-start-line="76" selection-end-line="76" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/NewIngredientPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="112" column="73" lean-forward="true" selection-start-line="112" selection-start-column="24" selection-end-line="112" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/ConfigPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/CocktailProgressPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="87" column="30" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/SelectCocktailPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="833">
+          <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/CocktailMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        <state relative-caret-position="391">
+          <caret line="29" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/ConfigPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="125" column="23" selection-start-line="125" selection-start-column="23" selection-end-line="125" selection-end-column="23" />
+          <folding>
+            <element signature="e#4381#4382#0" expanded="true" />
+            <element signature="e#4457#4458#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/SelectCocktailPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="81" column="110" selection-start-line="81" selection-start-column="110" selection-end-line="81" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/RefillPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/ArduinoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1465">
-          <caret line="118" column="5" lean-forward="true" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
+        <state relative-caret-position="425">
+          <caret line="86" column="24" lean-forward="true" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://22695175-0bb5-41ab-bfb9-45889ce64670/schema/main/table/ingredients">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/model/CocktailDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="183" column="30" lean-forward="true" selection-start-line="183" selection-start-column="30" selection-end-line="183" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/mannheim/nawabu/cocktail/view/InputsPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="140" column="36" selection-start-line="140" selection-start-column="36" selection-end-line="140" selection-end-column="36" />
         </state>
       </provider>
     </entry>

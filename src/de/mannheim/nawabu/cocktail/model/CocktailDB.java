@@ -118,6 +118,12 @@ public class CocktailDB {
         return size;
     }
 
+    public void setGlassSize(int size) {
+        String sql = String.format("UPDATE configs SET glass_size=%d;", size);
+
+        runStatement(sql);
+    }
+
     private void runStatement(String sql) {
         try {
             Statement st = conn.createStatement();
@@ -167,10 +173,16 @@ public class CocktailDB {
     }
 
     public void updatePump(int iID, int pump) {
-        String sql = String.format("UPDATE ingredients SET pump=NULL WHERE pump=%d;", pump);
-        runStatement(sql);
-        sql = String.format("UPDATE ingredients SET pump=%d WHERE ingredient_id=%d;", pump, iID);
-        runStatement(sql);
+        if(pump >= 0) {
+            String sql = String.format("UPDATE ingredients SET pump=NULL WHERE pump=%d;", pump);
+            runStatement(sql);
+            sql = String.format("UPDATE ingredients SET pump=%d WHERE ingredient_id=%d;", pump, iID);
+            runStatement(sql);
+        }
+        else {
+            String sql = String.format("UPDATE ingredients SET pump=NULL WHERE ingredient_id=%d;", iID);
+            runStatement(sql);
+        }
     }
 
     public void updateIngredientLevel(int iID, int level) {

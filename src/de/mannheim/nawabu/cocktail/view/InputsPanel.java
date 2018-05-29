@@ -30,8 +30,8 @@ public class InputsPanel extends ViewTemplate implements ActionListener {
 		initButton("br", "-->", this, "next");
 		
 		GridBagLayout gridBagLayout = new GridBagLayout();
-		gridBagLayout.columnWidths = new int[] {100, 200, 100, 100, 100};
-		gridBagLayout.columnWeights = new double[]{0.0, 1.0, 0.0, 0.0, 0.0};
+		gridBagLayout.columnWidths = new int[] {100, 200, 100, 100, 100, 100};
+		gridBagLayout.columnWeights = new double[]{0.0, 1.0, 0.0, 0.0, 0.0, 0.0};
 		contentPanel.setLayout(gridBagLayout);
 		
 		JLabel lblAnschluss = new JLabel("Anschluss");
@@ -122,13 +122,25 @@ public class InputsPanel extends ViewTemplate implements ActionListener {
                 JButton btnRefill = new JButton("auffüllen");
                 btnRefill.setPreferredSize(new Dimension(120, Config.buttonHeight));
                 btnRefill.addActionListener(e -> {
-					RefillPanel refillPanel = new RefillPanel(mainFrame, i, "inputs");
+					new RefillPanel(mainFrame, i, "inputs");
 				});
                 GridBagConstraints gbc_refill = new GridBagConstraints();
                 gbc_refill.insets = new Insets(0, 0, 5, 5);
                 gbc_refill.gridx = 4;
                 gbc_refill.gridy = row;
                 contentPanel.add(btnRefill, gbc_refill);
+
+                JButton btnDelete = new JButton("entfernen");
+                btnDelete.setPreferredSize(new Dimension(120, Config.buttonHeight));
+                btnDelete.addActionListener(e -> {
+                   db.updatePump(i.getId(), -1);
+                   new InputsPanel(mainFrame);
+                });
+                GridBagConstraints gbc_delete = new GridBagConstraints();
+                gbc_delete.insets = new Insets(0, 0, 5, 5);
+                gbc_delete.gridx = 5;
+                gbc_delete.gridy = row;
+                contentPanel.add(btnDelete, gbc_delete);
             }
 
             revalidate();
@@ -140,7 +152,7 @@ public class InputsPanel extends ViewTemplate implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		switch (e.getActionCommand()) {
 		case "cancel":
-			ConfigPanel config = new ConfigPanel(mainFrame);
+			new ConfigPanel(mainFrame);
 			break;
 		case "previous":
 			drawInputsPage(1);

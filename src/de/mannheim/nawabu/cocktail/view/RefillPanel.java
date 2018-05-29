@@ -85,15 +85,12 @@ public class RefillPanel extends ViewTemplate implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-        SelectCocktailPanel cocktailMain;
-        InputsPanel inputsPanel;
-
 		switch (e.getActionCommand()) {
 		case "cancel":
             if(target.equals("main") || target.equals("make"))
-                cocktailMain = new SelectCocktailPanel(mainFrame);
+                new SelectCocktailPanel(mainFrame);
             else
-                inputsPanel = new InputsPanel(mainFrame);
+                new InputsPanel(mainFrame);
 			break;
 		case "save":
             try {
@@ -107,14 +104,14 @@ public class RefillPanel extends ViewTemplate implements ActionListener {
 
             switch (target) {
                 case "main":
-                    cocktailMain = new SelectCocktailPanel(mainFrame);
+                    new SelectCocktailPanel(mainFrame);
                     break;
                 case "make":
 					makeCocktail = db.getRecipe(makeCocktail.getId());
-                    arduino.makeCocktail(mainFrame, makeCocktail);
+                    new Thread(() -> arduino.makeCocktail(mainFrame, makeCocktail)).start();
                     break;
                 default:
-                    inputsPanel = new InputsPanel(mainFrame);
+                    new InputsPanel(mainFrame);
                     break;
             }
             break;

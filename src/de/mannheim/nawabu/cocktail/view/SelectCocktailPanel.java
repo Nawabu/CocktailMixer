@@ -79,7 +79,7 @@ public class SelectCocktailPanel extends ViewTemplate implements ActionListener 
 
 	private void drawCocktailButton(Recipe recipe) {
         JButton btnCocktail = new JButton(recipe.getName());
-        btnCocktail.addActionListener(e -> arduino.makeCocktail(mainFrame, recipe));
+        btnCocktail.addActionListener(e -> new Thread(() -> arduino.makeCocktail(mainFrame, recipe)).start());
         GridBagConstraints gbc_btnCocktail = new GridBagConstraints();
         gbc_btnCocktail.fill = GridBagConstraints.BOTH;
         gbc_btnCocktail.insets = new Insets(0, 0, 10, 10);
